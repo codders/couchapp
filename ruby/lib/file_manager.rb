@@ -49,7 +49,7 @@ module CouchApp
       design['_id'] = docid
       # design['language'] = lang if lang
       make_manifest(design)
-      @db.save(design)
+      @db.save_doc(design)
       push_directory(attachdir, docid)
     end
   
@@ -101,7 +101,7 @@ module CouchApp
 
       unless doc
         say "creating #{docid}"
-        @db.save({"_id" => docid, "_attachments" => @attachments, "signatures" => @signatures})
+        @db.save_doc({"_id" => docid, "_attachments" => @attachments, "signatures" => @signatures})
         return
       end
 
@@ -148,7 +148,7 @@ module CouchApp
       end
 
       begin
-        @db.save(doc)
+        @db.save_doc(doc)
       rescue Exception => e
         say e.message
       end
