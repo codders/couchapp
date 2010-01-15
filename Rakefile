@@ -47,8 +47,8 @@ spec = Gem::Specification.new do |s|
 
     couchrest
     Lean and RESTful interface to CouchDB.
-    http://github.com/jchris/couchrest
-    >=0.11.0
+    http://github.com/couchrest/couchrest
+    >=0.30.0
 
     "
 

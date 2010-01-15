@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["J Chris Anderson", "Jan Lehnardt", "Greg Borenstein"]
   s.bindir = %q{ruby/bin}
-  s.date = %q{2010-01-14}
+  s.date = %q{2010-01-15}
   s.default_executable = %q{couchapp}
   s.description = %q{CouchApp is a set of helpers and a jQuery plugin that conspire to get you up and running on CouchDB quickly and correctly. It brings clarity and order to the freedom of CouchDB’s document-based approach.}
   s.email = %q{jchris@apache.org}
@@ -26,15 +26,15 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<json>, [">= 1.1.3"])
       s.add_runtime_dependency(%q<json_pure>, [">= 1.1.3"])
-      s.add_runtime_dependency(%q<couchrest>, [">= 0.11.0"])
+      s.add_runtime_dependency(%q<couchrest>, [">= 0.30.0"])
     else
       s.add_dependency(%q<json>, [">= 1.1.3"])
       s.add_dependency(%q<json_pure>, [">= 1.1.3"])
-      s.add_dependency(%q<couchrest>, [">= 0.11.0"])
+      s.add_dependency(%q<couchrest>, [">= 0.30.0"])
     end
   else
     s.add_dependency(%q<json>, [">= 1.1.3"])
     s.add_dependency(%q<json_pure>, [">= 1.1.3"])
-    s.add_dependency(%q<couchrest>, [">= 0.11.0"])
+    s.add_dependency(%q<couchrest>, [">= 0.30.0"])
   end
 end
